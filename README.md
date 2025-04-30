@@ -1,9 +1,9 @@
 # 🏠 Homelab — Proxmox ▶ TrueNAS SCALE ▶ Plex & *arr Stack
 
 > A completely self-hosted media server running on local hardware, documented step-by-step so **you** can fork, replicate, and hack on it.
-cybersecurity 125605.png
----
 
+---
+https://github.com/bunnyhp/HOmeLab/blob/main/cybersecurity%20125605.png?raw=true 
 ## 📜 Table of Contents
 
 - [Architecture](#architecture)
