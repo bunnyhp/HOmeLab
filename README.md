@@ -3,6 +3,12 @@
 > A completely self-hosted media server running on local hardware, documented step-by-step so **you** can fork, replicate, and hack on it.
 
 ---
+
+
+<!-- 2 ▸ Glance / Start-page dashboard -->
+![Dashboard screenshot](cybersecurity%20125642.png)
+
+
 https://github.com/bunnyhp/HOmeLab/blob/main/cybersecurity%20125605.png?raw=true 
 ## 📜 Table of Contents
 
@@ -47,7 +53,8 @@ https://github.com/bunnyhp/HOmeLab/blob/main/cybersecurity%20125605.png?raw=true
 *Everything* lives inside the TrueNAS SCALE VM. Apps are deployed via the **official Apps catalogue** (Kubernetes), but you can also reproduce them with Docker Compose.
 
 ---
-
+<!-- 1 ▸ Architecture diagram -->
+![Architecture overview](cybersecurity%20125605.png)
 ## Hardware
 
 | Part | Model | Purpose |
@@ -101,6 +108,8 @@ tank/
     ├── incomplete/
     └── complete/
 ```
+<!-- 3 ▸ Plex library view -->
+![Plex library](cybersecurity%20125743.png)
 
 1. `media/*` — readonly for Plex  
 2. `downloads/incomplete` — qBittorrent temp files  
@@ -149,6 +158,14 @@ done
 | 8080 | qBittorrent | ❌ LAN only |
 | 5055 | Jellyseerr | ✅ via subdomain `requests.media.example.com` |
 
+<!-- 5 ▸ TrueNAS SCALE Apps screen -->
+![TrueNAS Apps](cybersecurity%20125840.png)
+
+<!-- 6 ▸ VM layout in Proxmox -->
+![Proxmox VM layout](cybersecurity%20125908.png)
+
+<!-- 7 ▸ ZFS pool / datasets -->
+![ZFS datasets](cybersecurity%20125934.png)
 ---
 
 ## Back-ups & Maintenance
@@ -157,7 +174,9 @@ done
 2. **App Configs** — Restic push to Backblaze B2 nightly.  
 3. **Media** — not backed up (ripped discs can be re-encoded) but protected by RAID-Z1.  
 4. **Updates** — `sudo kubectl-apps upgrade --all` weekly via cron.
-
+   
+<!-- 4 ▸ *arr stack status widgets -->
+![*arr stack](cybersecurity%20125809.png)
 ---
 
 ## Roadmap
